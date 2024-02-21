@@ -41,19 +41,17 @@ class ProductListView extends StatelessWidget {
                   onTap: (){
                     controller.increCount(index);
                   },
-                  child: CircleAvatar(
+                  child: const CircleAvatar(
                     backgroundColor: Colors.white,
                     child: Icon(Icons.add),
                   ),
                 ),
-                //IconButton(onPressed: (){}, icon: Icon(Icons.add)),
-                Obx(() => Text(controller.allProducts[index].count.toString(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),)),
-                //IconButton(onPressed: (){}, icon: Icon(Icons.remove))
+                Obx(() => Text(controller.allProducts[index].count.toString(), style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),)),
                 InkWell(
                   onTap: (){
                     controller.decreCount(index);
                   },
-                  child: CircleAvatar(
+                  child: const CircleAvatar(
                     radius: 20,
                     backgroundColor: Colors.white,
                     child: Icon(Icons.remove),

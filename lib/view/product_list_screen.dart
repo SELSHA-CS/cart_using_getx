@@ -13,9 +13,9 @@ class ProductListScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Item List"),
+        title: const Text("Item List"),
       ),
-      body: ProductListView(),
+      body: const ProductListView(),
       floatingActionButton: FloatingActionButton(
         onPressed: (){
           Navigator.push(context, MaterialPageRoute(
@@ -24,7 +24,7 @@ class ProductListScreen extends StatelessWidget {
         },
         child: Badge(
           badgeContent: Obx(() => Text(controller.itemCount.value.toString())),
-          child: Icon(Icons.shopping_cart),
+          child: const Icon(Icons.shopping_cart),
         ),
       ),
     );

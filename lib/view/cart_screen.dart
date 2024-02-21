@@ -1,6 +1,5 @@
 import 'package:cart_using_getx/controller/product_controller.dart';
 import 'package:cart_using_getx/model/product.dart';
-import 'package:cart_using_getx/view/product_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -13,7 +12,7 @@ class CartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Cart"),
+        title: const Text("Cart"),
         actions: [
           IconButton(
             onPressed: (){},
@@ -51,19 +50,17 @@ class CartScreen extends StatelessWidget {
                           onTap: (){
                             controller.increCount(index);
                           },
-                          child: CircleAvatar(
+                          child: const CircleAvatar(
                             backgroundColor: Colors.grey,
                             child: Icon(Icons.add),
                           ),
                         ),
-                        //IconButton(onPressed: (){}, icon: Icon(Icons.add)),
-                        Obx(() => Text(controller.allProducts[index].count.toString(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),)),
-                        //IconButton(onPressed: (){}, icon: Icon(Icons.remove))
+                        Obx(() => Text(controller.allProducts[index].count.toString(), style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),)),
                         InkWell(
                           onTap: (){
                             controller.decreCount(index);
                           },
-                          child: CircleAvatar(
+                          child: const CircleAvatar(
                             radius: 20,
                             backgroundColor: Colors.grey,
                             child: Icon(Icons.remove),
@@ -72,6 +69,9 @@ class CartScreen extends StatelessWidget {
                       ],
                     ),
                   );
+                }
+                else{
+                  return Container();
                 }
               }
             ),
@@ -83,8 +83,8 @@ class CartScreen extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Text("Total"),
-                    Obx(() => Text(controller.price.value.toString(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),))
+                    const Text("Total"),
+                    Obx(() => Text(controller.price.value.toString(), style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),))
                   ],
                 ),
                 MaterialButton(
@@ -92,7 +92,7 @@ class CartScreen extends StatelessWidget {
                   color: Colors.grey,
                   height: 40,
                   minWidth: 200,
-                  child: Text("CheckOut"),
+                  child: const Text("CheckOut"),
                 ),
               ],
             ),
