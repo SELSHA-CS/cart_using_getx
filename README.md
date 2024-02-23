@@ -1,3 +1,10 @@
+<div style="display:flex; justify-content:space-between;">
+    <img src="https://github.com/SELSHA-CS/cart_using_getx/assets/142321043/9440538e-2833-4da2-ae1d-2019bbeefe77" alt="Screenshot 1" width="30%">
+    <img src="https://github.com/SELSHA-CS/cart_using_getx/assets/142321043/ad47b9d2-c96c-4511-996b-f7d86a2bf17b" alt="Screenshot 2" width="30%">
+    <img src="https://github.com/SELSHA-CS/cart_using_getx/assets/142321043/272c20e2-c705-4d3c-96ff-198810edeeb7" alt="Screenshot 3" width="30%">
+    <img src="https://github.com/SELSHA-CS/cart_using_getx/assets/142321043/7b95e033-4001-4d9c-96b7-c31babd2cc94" alt="Screenshot 4" width="30%">
+</div>
+
 # cart_using_getx
 
 A new Flutter project.
